@@ -1,7 +1,13 @@
 import React from 'react';
 import './style.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExclamationTriangle, faExclamationCircle,
+ faMinusCircle, faBroadcastTower, faLevelDownAlt,
+faFireAlt } from '@fortawesome/free-solid-svg-icons'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+
+//imagens
 import Robozin from '../../img/robozinho.png';
 import Robozinha from '../../img/robozinha.png';
 import PlugAndPlay from '../../img/plugandplay.png'
@@ -10,6 +16,7 @@ import Gestaodeativos from '../../img/gestaodeativos.png';
 import Envio from '../../img/envio.png'
 import Cola from '../../img/cola.png';
 import Receba from '../../img/receba.png';
+import CincoEstrelas from '../../img/cincoestrelas.png';
 
 
 function Home() {
@@ -181,8 +188,45 @@ function Home() {
 
                     </div>
 
-                </section>                
+                </section>
 
+                <div className="detectedProblems">
+                    <h1>Detectamos vários problemas com precisão.</h1>
+                    <div className="gridProblems">
+
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faExclamationTriangle} className="exclamationTriangle" />
+                            <h4>Desalinhamento detectado</h4>
+                        </div>
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faExclamationCircle} className="exclamationCircle" />
+                            <h4>Desbalanceamento detectado</h4>
+                        </div>
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faMinusCircle} className="minusCircle" />
+                            <h4>Folga Mecânica detectada</h4>
+                        </div>
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faFireAlt} className="fireAlt" />
+                            <h4>Temperatura Anormal detectada</h4>
+                        </div>
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faBroadcastTower} className="broadcastTower" />
+                            <h4>Vibração Anormal detectada</h4>
+                        </div>
+                        <div className="problem">
+                            <FontAwesomeIcon icon={faLevelDownAlt} className="levelDownAlt" />
+                            <h4>Parada Inesperada detectada</h4>
+                        </div>
+
+                    </div>
+                </div>                
+
+            </section>
+
+            <section id="achievements">
+                <img draggable="false" src={CincoEstrelas} alt=""/>
+                <h2>#1 Em soluções para Manutenção.</h2>
             </section>
 
             <Footer />

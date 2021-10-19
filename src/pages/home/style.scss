@@ -399,7 +399,7 @@
             display: flex;
             flex-direction: column;
             width: 100vw;
-            align-items: center;
+            align-items: center;  
 
             .PSStoryline {
 
@@ -414,6 +414,7 @@
                 justify-content: center;
                 background-color: $azul-tractian;
                 position: relative;
+                padding-bottom: 2em;
 
                 .boxStoryline {
 
@@ -511,6 +512,109 @@
                 }
 
             }
+        }
+
+        .detectedProblems {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 2em;
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .gridProblems {
+
+                width: 90vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 30vw);
+
+
+                .problem {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 0.5em;
+                    border-radius: 10px;
+                    margin: 1em;
+                    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+                    transition: transform .45s ease, background .45s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+
+                    .exclamationTriangle {
+                        background: linear-gradient(45deg, #25C8EF, #3A88F6);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+
+                    .exclamationCircle {
+                        background: linear-gradient(45deg, #A556F7, #6666F2);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+
+                    .minusCircle {
+                        background: linear-gradient(45deg, #FAC815, #F97816);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+
+                    .fireAlt {
+                        background: linear-gradient(45deg, #F98D3F, #DD2D73);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+
+                    .broadcastTower {
+                        background: linear-gradient(45deg, #3ABAF8, #616BF1);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+
+                    .levelDownAlt {
+                        background: linear-gradient(45deg, #2D2D30, #2D2D30);
+                        width: 1em;
+                        padding: 1em;
+                        border-radius: 100px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    #achievements {
+
+        display: flex;
+        padding-top: 2em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            height: 30vh;
+        }
+
+        h2 {
+            color: white;
         }
     }
 }
