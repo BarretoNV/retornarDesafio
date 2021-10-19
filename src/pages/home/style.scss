@@ -12,13 +12,16 @@
         justify-content: space-evenly;
         align-items: center;
         margin-top: 5em;
+        padding: 1.5em;
+        width: 100vw;
 
         .textWrapper {
 
-            margin: 3rem;
+            margin: 1rem;
+            width: 60vw;
 
             h1{
-                font-size: 3em;
+                font-size: 4em;
                 font-family: Fira Mono;
                 font-weight: normal;
                 color: white;
@@ -109,7 +112,7 @@
 
     
         img {
-            height: 60vh;
+            height: 70vh;
         }
     }
 
@@ -121,7 +124,7 @@
         background-color: $azul-tractian;
 
         h1 {
-            font-size: 1.8em;
+            font-size: 3em;
             font-family: Noto Sans;
             color: white;
             animation: glitch 1s linear infinite;
@@ -147,14 +150,29 @@
         }
 
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             font-family: Noto Sans;
+            color: white;
+        }
+
+        #rowObjects {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+            img {
+                height: 60vh;
+            }
         }
 
         .cardsWrapper {
 
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 2em;
 
             .whyCards {
@@ -162,6 +180,7 @@
                 padding: 1em;
                 margin: 1em;
                 border-radius: 10px;
+                width: 30vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -247,16 +266,15 @@
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
-                border-radius: 10px;
                 text-decoration: none;
-                background: white;
+                background: transparent;
                 margin: 1em;
                 padding: 2.75em 2.5em;
                 box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
                 transition: transform .45s ease, background .45s ease;
             
                 h3 {
-                    color: black;
+                    color: white;
                     font-size: 3.5em;
                     font-family: Noto Sans;
                     line-height: 1;
@@ -267,7 +285,7 @@
                 }
             
                 p {
-                    opacity: 0;
+                    opacity: 0.5;
                     color: #FFFFFF;
                     font-weight: 600;
                     line-height: 1.8;
@@ -294,6 +312,204 @@
                         transform: none;
                     }
                 }
+            }
+        }
+    }
+
+    #howItWorks {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5em;
+        background-color: $offWhite;
+
+        h1{
+            font-size: 3em;
+            font-family: Noto Sans;
+            color: $azul-tractian;
+            animation: glitch 1s linear infinite;
+        }
+
+        h1:before,
+        h1:after{
+            content: attr(title);
+            position: absolute;
+            left: 0;
+        }
+        
+        h1:before{
+            animation: glitchTop 1s linear infinite;
+            clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        }
+        
+        h1:after{
+            animation: glitchBotom 1.5s linear infinite;
+            clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            font-family: Noto Sans;
+            font-weight: normal;
+            color: black;
+
+            b {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            color: black;
+        }
+
+        .problemsSolved {
+            .example {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 2em;
+
+                img {
+                    height: 40vh;
+                }
+            }
+
+            .exampleReverse {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                padding: 2em;
+
+
+                img {
+                    height: 50vh;
+                }
+            }
+        }
+
+        #PSPhases {
+
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            align-items: center;
+
+            .PSStoryline {
+
+                display: grid; 
+                grid-template-columns: 1fr 0fr 1fr; 
+                grid-template-rows: 1fr 1fr 1fr;  
+                grid-template-areas: 
+                "A B ."
+                ". C D"
+                "E F .";
+                align-items: center;
+                justify-content: center;
+                background-color: $azul-tractian;
+                position: relative;
+
+                .boxStoryline {
+
+                    display: flex;
+                    width: 5em;
+                    height: 5em;
+                    background-color: $azul-tractian;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+
+
+                    h1 {
+
+                        font-size: 28px;
+                        color: white;
+
+                    }
+
+                }
+
+                .storylineText {
+
+                    padding: 0 1rem;
+
+                    h3 {
+
+                        color: white;
+
+                    }
+
+                    img {
+                        height: 40vh;
+                    }
+
+                    h4 {
+
+                        margin: .5rem 0;
+                        font-weight: 400;
+                        color: white;
+                        opacity: .6;
+
+                    }
+
+                    span {
+
+                        color: white;
+
+                    }
+
+                }
+
+                #A {
+
+                    grid-area: A;
+                    text-align: right;
+                    align-self: center;
+
+                }
+
+                #B {
+
+                    grid-area: B;
+                    z-index: 2;
+
+                }
+
+                #C {
+
+                    grid-area: C;
+                    z-index: 2;
+
+                }
+
+                #D {
+
+                    grid-area: D;
+                    text-align: left;
+
+                }
+
+                #E {
+
+                    grid-area: E;
+                    text-align: right;
+
+                }
+
+                #F {
+
+                    grid-area: F;
+                    z-index: 2;
+
+                }
+
             }
         }
     }
