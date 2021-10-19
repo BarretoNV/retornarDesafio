@@ -314,6 +314,65 @@
                 }
             }
         }
+
+        #achievements {
+
+            display: flex;
+            padding-top: 2em;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+    
+            img {
+                height: 30vh;
+            }
+    
+            h2 {
+                color: white;
+            }
+    
+            .feedbacks {
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                    .clientText {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1em;
+                        padding: 1em;
+                        width: 80vw;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                        img {
+                            height: 20vh;
+                            border-radius: 100px;
+                            margin: 1em;
+                        }
+                
+                        h3 {
+                            margin: 1em;
+                            text-align: center;
+                            font-size: 1em;
+                            color: white;
+                        }
+    
+                        h4, p {
+                            color: white;
+                            text-align: center;
+                        }
+    
+                        p{
+                            font-size: 0.8em;
+                        }
+    
+                    }
+            }
+        }
     }
 
     #howItWorks {
@@ -598,23 +657,6 @@
                     }
                 }
             }
-        }
-    }
-
-    #achievements {
-
-        display: flex;
-        padding-top: 2em;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        img {
-            height: 30vh;
-        }
-
-        h2 {
-            color: white;
         }
     }
 }
