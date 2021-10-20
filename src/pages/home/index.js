@@ -18,6 +18,7 @@ import Cola from '../../img/cola.png';
 import Receba from '../../img/receba.png';
 import CincoEstrelas from '../../img/cincoestrelas.png';
 import ProfilePic from '../../img/profilepic.jpg'
+import LeoeMih from '../../img/leoemih.png'
 
 
 function Home() {
@@ -263,8 +264,33 @@ function Home() {
                         </div>
 
                     </div>
-                </div>                
+                </div>
 
+                <div className="schedule">
+                    <input placeholder="E-mail profissional"></input>
+                    <button id="glowOnHover" type="button">AGENDE UMA DEMO</button>
+                </div>
+                
+                <h3>E mais! Descbura o quanto você economiza com a nossa solução!!</h3>
+                <button id="glowOnHover" type="button">USE NOSSA CALCULADORA E DESCUBRA!</button>
+
+            </section>
+
+            <section id="finalContent">
+                <div className="workWithUs">
+                    <h1>ENTRE PARA A EQUIPE!</h1>
+                    <img draggable="false" src={LeoeMih} alt=""/>
+                    <p>Veja as vagas e seja parte de uma equipe de alta performance.</p>
+                    <button id="glowOnHover" type="button">CONFIRA AS VAGAS!</button>
+                </div>
+                
+                <div className="seeTheBlog">
+                    <h1>Novidades no Blog</h1>
+                    <p>Como funciona o sensor de monitoramento online da TRACTIAN?</p>
+                    <p>Saiba tudo sobre a gestão de ativos industriais</p>
+                    <p>Conheça as 10 causas mais comuns em motores elétricos e saiba como evitá-las</p>
+                    <button className="blogButton" type="button">Ir para o Blog</button>
+                </div>
             </section>
 
             <Footer />

@@ -382,6 +382,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 1.5em;
+        padding-bottom: 2em;
         background-color: $offWhite;
 
         h1{
@@ -419,6 +420,64 @@
             b {
                 font-weight: bold;
             }
+        }
+
+        h3 {
+            font-size: 1.5em;
+            font-family: Noto Sans;
+        }
+
+        #glowOnHover {
+            padding: 1em;
+            border: white;
+            outline: none;
+            color: #fff;
+            background: $verde-vivo;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+        }
+        
+        #glowOnHover:before {
+            content: '';
+            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        
+        #glowOnHover:active {
+            color: $verde-vivo;
+        }
+        
+        #glowOnHover:active:after {
+            background: transparent;
+        }
+        
+        #glowOnHover:hover:before {
+            opacity: 1;
+        }
+        
+        #glowOnHover:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $verde-vivo;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
         }
 
         p {
@@ -658,8 +717,216 @@
                 }
             }
         }
+
+        .schedule {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 2em;
+
+            input {
+                padding: 1em;
+                margin: 1em;
+                border-radius: 10px;
+                border: none;
+            }
+
+            #glowOnHover {
+                padding: 1em;
+                border: white;
+                outline: none;
+                color: #fff;
+                background: $verde-vivo;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+            }
+            
+            #glowOnHover:before {
+                content: '';
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left:-2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                transition: opacity .3s ease-in-out;
+                border-radius: 10px;
+            }
+            
+            #glowOnHover:active {
+                color: $verde-vivo;
+            }
+            
+            #glowOnHover:active:after {
+                background: transparent;
+            }
+            
+            #glowOnHover:hover:before {
+                opacity: 1;
+            }
+            
+            #glowOnHover:after {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $verde-vivo;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    #finalContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 2em;
+        width: 100%;
+
+        .workWithUs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+
+            img {
+                height: 50vh;
+            }
+
+            h1 {
+                color: white;
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                color: white;
+                font-size: 1.5em;
+                margin-top: 0;
+            }
+
+            #glowOnHover {
+                padding: 1em;
+                border: white;
+                outline: none;
+                color: #fff;
+                background: $verde-vivo;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+            }
+            
+            #glowOnHover:before {
+                content: '';
+                background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+                position: absolute;
+                top: -2px;
+                left:-2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing 20s linear infinite;
+                opacity: 0;
+                transition: opacity .3s ease-in-out;
+                border-radius: 10px;
+            }
+            
+            #glowOnHover:active {
+                color: $verde-vivo;
+            }
+            
+            #glowOnHover:active:after {
+                background: transparent;
+            }
+            
+            #glowOnHover:hover:before {
+                opacity: 1;
+            }
+            
+            #glowOnHover:after {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: $verde-vivo;
+                left: 0;
+                top: 0;
+                border-radius: 10px;
+            }
+        }
+
+        .seeTheBlog {
+            background-color: $offWhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2em;
+            border-radius: 10px;
+            width: 40vw;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+            h1 {
+                color: $azul-tractian;
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                color: black;
+                font-size: 1.3em;
+                width: 100%;
+                margin-top: 0;
+                text-align: left;
+                box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+                border-radius: 10px;
+                padding: 0.5em;
+                cursor: pointer;
+                transition: transform .45s ease, background .45s ease;
+
+            }
+
+            p:hover {
+                transition: all 1s;
+                transform: scale(1.05);
+
+            }
+
+            .blogButton {
+                padding: 1em;
+                border: white;
+                outline: none;
+                color: $azul-tractian;
+                background: transparent;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 1.3em;
+                position: relative;
+                z-index: 0;
+                border-radius: 10px;
+            }
+        }
     }
 }
+
+
 
 @keyframes glowing {
     0% { background-position: 0 0; }
