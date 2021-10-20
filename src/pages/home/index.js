@@ -17,8 +17,9 @@ import Envio from '../../img/envio.png'
 import Cola from '../../img/cola.png';
 import Receba from '../../img/receba.png';
 import CincoEstrelas from '../../img/cincoestrelas.png';
-import ProfilePic from '../../img/profilepic.jpg'
-import LeoeMih from '../../img/leoemih.png'
+import ProfilePic from '../../img/profilepic.jpg';
+import LeoeMih from '../../img/leoemih.png';
+import ReactLogo from '../../img/reactlogo.png';
 
 
 function Home() {
@@ -276,7 +277,7 @@ function Home() {
 
             </section>
 
-            <section id="finalContent">
+            <section id="workAndBLog">
                 <div className="workWithUs">
                     <h1>ENTRE PARA A EQUIPE!</h1>
                     <img draggable="false" src={LeoeMih} alt=""/>
@@ -290,6 +291,39 @@ function Home() {
                     <p>Saiba tudo sobre a gestão de ativos industriais</p>
                     <p>Conheça as 10 causas mais comuns em motores elétricos e saiba como evitá-las</p>
                     <button className="blogButton" type="button">Ir para o Blog</button>
+                </div>
+            </section>
+
+            <section id="finalContent">
+                <form className="demoForm">
+
+                    <h1>Melhore a sua manutenção!</h1>
+                    <p>Preencha o formulário para uma demonstração.</p>
+
+                    <input id="inputID" type="text" className="textBox" placeholder="Nome*"/>
+
+                    <input id="inputID" type="text" className="textBox" placeholder="Seu E-mail*"/>
+
+                    <input id="inputID" type="text" className="textBox" placeholder="Seu Cargo*"/>
+
+                    <input id="inputID" type="text" className="textBox" placeholder="Telefone*"/>
+                    
+                    <div className="buttonsForm">
+                        <button id="glowOnHover" type="submit">ENVIAR</button>
+                    </div>
+
+                </form>
+
+                <h2>Conheça nossos parceiros!</h2>
+                <div className="partnersLogos">
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={ReactLogo} alt=""/>
                 </div>
             </section>
 
