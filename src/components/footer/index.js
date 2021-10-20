@@ -19,11 +19,6 @@ function Footer() {
     return (
         <footer >
 
-            <div className="contact">
-                <li> <Link to='/' > Trabalhe conosco </Link> </li>
-                <li> <Link to='/'> Conheça a Tractian </Link> </li>                
-            </div>
-
             <div className='menu' >
 
                 <ul className='footerList'>
@@ -60,6 +55,13 @@ function Footer() {
 
                 </ul>
 
+                
+                <ul className="footerList">
+                    <h1>FALE CONOSCO</h1>
+                    <li> <Link to='/' > Trabalhe conosco </Link> </li>
+                    <li> <Link to='/'> Fale com o CEO </Link> </li>                
+                </ul>
+
             </div>
 
             <div className='menu' >
@@ -89,12 +91,15 @@ function Footer() {
                 <ul className='footerImages'>
 
                     <h1>CONECTE-SE CONOSCO</h1>
-                    <div className="rewards">
+                    <div className="socialMedias">
                         <img draggable="false" src={Linkedin} alt=""/>
                         <img draggable="false" src={Instagram} alt=""/>
                         <img draggable="false" src={Facebook} alt=""/>
                         <img draggable="false" src={Youtube} alt=""/>
                     </div>
+
+                    <h2>© Tractian Tecnologia Ltda</h2>
+                    <h2>CNPJ xx.xxx.xxx/xxxx-xx</h2>
 
                 </ul>
 

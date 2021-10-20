@@ -2,7 +2,7 @@
 
 #homeBody {
 
-    background-color: $azul-tractian;
+    background: linear-gradient(45deg, #1E40AF, #2461E9);
     overflow-y: hidden;
 
     nav {
@@ -121,7 +121,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: $azul-tractian;
+        padding-bottom: 2em;
+
 
         h1 {
             font-size: 3em;
@@ -185,7 +186,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background: radial-gradient(#d4d4d4, white);
+                background-color: $offWhite;
+                transition: transform .45s ease, background .45s ease;
                 box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 
                 h2, p {
@@ -194,13 +196,8 @@
             }
 
             .whyCards:hover {
-                background: black;
-                transition: all 2s;
-                transform: scale(1.1);
-
-                h2, p {
-                    color: white;
-                }
+                transition: all 1s;
+                transform: scale(1.05);
             }
         }
 
@@ -270,6 +267,7 @@
                 background: transparent;
                 margin: 1em;
                 padding: 2.75em 2.5em;
+                border-radius: 10px;
                 box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
                 transition: transform .45s ease, background .45s ease;
             
@@ -280,7 +278,7 @@
                     line-height: 1;
                     padding-bottom: .5em;
                     margin: 0 0 .1em 0;
-                    border-bottom: 2px solid $violeta;
+                    border-bottom: 2px;
                     transition: color .45s ease, border .45s ease;
                 }
             
@@ -300,7 +298,6 @@
                 
                     h3 {
                         color: white;
-                        border-bottom-color: $violeta;
                     }
                 
                     h4 {
@@ -381,7 +378,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1.5em;
         padding-bottom: 2em;
         background-color: $offWhite;
 
@@ -530,7 +526,7 @@
                 "E F .";
                 align-items: center;
                 justify-content: center;
-                background-color: $azul-tractian;
+                background: linear-gradient(45deg, #1E40AF, #2461E9);
                 position: relative;
                 padding-bottom: 2em;
 
@@ -539,7 +535,7 @@
                     display: flex;
                     width: 5em;
                     height: 5em;
-                    background-color: $azul-tractian;
+                    background: linear-gradient(45deg, #1E40AF, #2461E9);
                     align-items: center;
                     justify-content: center;
                     border-radius: 10px;
@@ -597,14 +593,12 @@
                 #B {
 
                     grid-area: B;
-                    z-index: 2;
 
                 }
 
                 #C {
 
                     grid-area: C;
-                    z-index: 2;
 
                 }
 
@@ -625,7 +619,6 @@
                 #F {
 
                     grid-area: F;
-                    z-index: 2;
 
                 }
 
@@ -669,48 +662,54 @@
 
                     .exclamationTriangle {
                         background: linear-gradient(45deg, #25C8EF, #3A88F6);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
 
                     .exclamationCircle {
                         background: linear-gradient(45deg, #A556F7, #6666F2);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
 
                     .minusCircle {
                         background: linear-gradient(45deg, #FAC815, #F97816);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
 
                     .fireAlt {
                         background: linear-gradient(45deg, #F98D3F, #DD2D73);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
 
                     .broadcastTower {
                         background: linear-gradient(45deg, #3ABAF8, #616BF1);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
 
                     .levelDownAlt {
                         background: linear-gradient(45deg, #2D2D30, #2D2D30);
-                        width: 1em;
-                        padding: 1em;
+                        height: 2em;
+                        width: 2em;
+                        padding: 0.5em;
                         border-radius: 100px;
                         color: white;
                     }
@@ -792,9 +791,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        margin-top: 2em;
-        margin-bottom: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
         width: 100%;
+        background: linear-gradient(45deg, #1E40AF, #2461E9);
+
 
         .workWithUs {
             display: flex;
