@@ -49,6 +49,15 @@ footer {
             }
         }
 
+    }
+
+    .menuImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+
         .footerImages {
             display: flex;
             flex-direction: column;
@@ -98,4 +107,43 @@ footer {
 
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        .menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .footerList {
+                width: 100%;
+                margin: 2em;
+            }
+        }
+
+        .menuImages {
+
+            display: flex;
+            flex-direction: column;
+
+            .footerImages {
+                width: 50%;
+                margin: 2em;
+
+                .rewards {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 0;
+                }
+
+                .investors {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
 }

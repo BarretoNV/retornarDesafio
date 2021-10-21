@@ -64,7 +64,7 @@ function Footer() {
 
             </div>
 
-            <div className='menu' >
+            <div className='menuImages' >
 
                 <ul className='footerImages'>
 
