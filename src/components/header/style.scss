@@ -45,28 +45,29 @@
                 }
             }
 
-            #dropdown-custom-1 {
+            .mobileAdjustHeader {
                 margin: 0.5rem;
-            }
 
-            .super-colors {
-                position: relative;
-                z-index: 2;
-                h2 {
-                    font-size: 1em;
-                    padding-left: 1em; 
-                }
-
-                .TESTE {
-                    position: relative;
-                    z-index: 2;
-
+                #mobileDropDown {
+                    
                     h1 {
                         font-size: 1.5em;
+                        font-family: Noto Sans;
                     }
-
-                    h3 {
+    
+                    p {
                         font-size: 1em;
+                    }
+    
+                    h2 {
+                        font-size: 1em;
+                        padding-left: 1em; 
+                    }
+    
+                    .dropDownInfo {
+                        h3 {
+                            font-size: 1em;
+                        }
                     }
                 }
             }
@@ -256,6 +257,7 @@
         width: 100vw;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         display: none;
 
         ul {
@@ -265,10 +267,37 @@
             align-items: center;
             width: 100%;
             list-style: none;
-            position: relative;
-            z-index: 2;
             margin-top: 5em;
             margin-bottom: 0em;
+
+            .mobileAdjustHeader {
+                margin: 0.5em 0;
+            }
+
+            #mobileDropDown {
+
+                margin: 0.5em 0;
+
+                h1 {
+                    font-size: 1.5em;
+                    font-family: Noto Sans;
+                }
+
+                p {
+                    font-size: 1em;
+                }
+
+                h2 {
+                    font-size: 1em;
+                    padding-left: 1em; 
+                }
+
+                .dropDownInfo {
+                    h3 {
+                        font-size: 1em;
+                    }
+                }
+            }
 
             li {
                 display: flex;
@@ -281,30 +310,6 @@
                     padding: 0.5rem;
                     border-radius: 5px;
                     background-color: #0D6EFD;
-                }
-            }
-
-            #dropdown-custom-1 {
-                display: flex;
-                margin: 0.5rem;
-            }
-
-            .super-colors {
-                display: flex;
-                h2 {
-                    font-size: 1em;
-                    padding-left: 1em; 
-                }
-
-                .TESTE {
-
-                    h1 {
-                        font-size: 1.5em;
-                    }
-
-                    h3 {
-                        font-size: 1em;
-                    }
                 }
             }
 

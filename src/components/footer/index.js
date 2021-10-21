@@ -12,6 +12,8 @@ import Linkedin from '../../img/linkedin.png';
 import Facebook from '../../img/facebook.png';
 import Instagram from '../../img/instagram.png';
 import Youtube from '../../img/youtube.png';
+import ScrollToTop from '../../components/toTop';
+
 
 
 function Footer() {
@@ -61,6 +63,8 @@ function Footer() {
                     <li> <Link to='/' > Trabalhe conosco </Link> </li>
                     <li> <Link to='/'> Fale com o CEO </Link> </li>                
                 </ul>
+
+                <ScrollToTop/>
 
             </div>
 

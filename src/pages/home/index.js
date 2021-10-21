@@ -24,11 +24,10 @@ import ReactLogo from '../../img/reactlogo.png';
 
 function Home() {
 
-
     return (
         <section id="homeBody">
 
-            <Header />
+            <Header/>
             <nav>
                 <div className="textWrapper"> 
                     <h1> Completo e eficiente. </h1>
@@ -326,7 +325,6 @@ function Home() {
                     <img draggable="false" src={ReactLogo} alt=""/>
                 </div>
             </section>
-
             <Footer />
         </section>
     )
