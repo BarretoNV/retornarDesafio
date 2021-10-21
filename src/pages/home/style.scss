@@ -1037,6 +1037,430 @@
     }
 }
 
+@media (max-width: 768px) {
+    #homeBody {
+
+        background: linear-gradient(45deg, #1E40AF, #2461E9);
+        overflow-y: hidden;
+        overflow-x: hidden;
+    
+        nav {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+            padding: 1.5em;
+            width: 100vw;
+    
+            .textWrapper {
+    
+                margin: 0.5rem;
+                width: 80vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                h1{
+                    font-size: 2em;
+                    font-family: Fira Mono;
+                    font-weight: normal;
+                    color: white;
+                    text-align: center;
+                    animation: glitch 1s linear infinite;
+                }
+        
+                h2 {
+                    font-size: 1.5em;
+                    font-family: Fira Mono;
+                    color: white;
+                    text-align: center;
+                }                
+            }
+    
+        
+            img {
+                height: 70vh;
+            }
+        }
+    
+        #whyTractian {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 2em;
+    
+    
+            h1 {
+                font-size: 2em;
+                font-family: Noto Sans;
+                color: white;
+                animation: glitch 1s linear infinite;
+            }
+    
+            h2 {
+                font-size: 1.5em;
+                font-family: Noto Sans;
+                text-align: center;
+                color: white;
+            }
+    
+            #rowObjects {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                width: 90vw;
+                img {
+                    height: 60vh;
+                }
+            }
+    
+            .cardsWrapper {
+    
+                display: flex;
+                flex-direction: column;
+
+                .whyCards {
+                    width: 90vw;
+                }
+
+            }
+    
+            .dataWhy {
+    
+                display: flex;
+                flex-direction: column;
+                
+            }
+    
+            #achievements {
+        
+                img {
+                    height: 18vh;
+                    margin-bottom: 1em;
+                }
+        
+                h2 {
+                    color: white;
+                    font-size: 1.2em;
+                }
+        
+                .feedbacks {
+        
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+        
+                        .clientText {
+                            display: flex;
+                            flex-direction: column;        
+                        }
+                }
+            }
+        }
+    
+        #howItWorks {
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2em;
+            padding-top: 2em;
+            background-color: $offWhite;
+    
+            h1{
+                font-size: 2em;
+                margin-bottom: 1em;
+                font-family: Noto Sans;
+                text-align: center;
+                color: $azul-tractian;
+                animation: glitch 1s linear infinite;
+            }
+    
+    
+            h2 {
+                font-size: 1.5em;
+                text-align: center;
+                padding: 0.5em;
+            }
+    
+            h3 {
+                font-size: 1.5em;
+                font-family: Noto Sans;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1.3em;
+                text-align: center;
+                padding: 0.5em;
+            }
+    
+            .problemsSolved {
+                .example {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2em;
+    
+                    img {
+                        height: 25vh;
+                    }
+
+                   .mobileAdjust {
+                       p {
+                        font-size: 1em;
+                        text-align: center;
+                        margin: 0 1em;
+                       }
+                   }
+                }
+    
+                .exampleReverse {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2em;
+    
+                    img {
+                        height: 25vh;
+                    }
+
+                   .mobileAdjust {
+                       p {
+                        font-size: 1em;
+                        text-align: center;
+                        margin: 0 1em;
+                       }
+                   }
+                }
+            }
+    
+            #PSPhases {
+    
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+                align-items: center;  
+    
+                .PSStoryline {
+    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .boxStoryline {
+                        h1 {
+                            display: none;
+                        }
+                    }
+    
+                    .storylineText {
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1em;
+
+                        h3 {
+    
+                            text-align: center;
+    
+                        }
+    
+                        h4 {
+    
+                            margin: .5rem 0;
+                            font-weight: 400;
+                            color: white;
+                            opacity: .6;
+    
+                        }
+    
+                        span {
+    
+                            text-align: center;
+    
+                        }
+    
+                    }    
+                }
+            }
+    
+            .detectedProblems {
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                padding-top: 2em;
+                margin-bottom: 2em;
+    
+                h1 {
+                    font-size: 1.5em;
+                }
+    
+                .gridProblems {
+    
+                    width: 90vw;
+                    display: flex;
+                    flex-direction: column;
+    
+    
+                    .problem {
+                        display: flex;
+                        justify-content: baseline;
+                        align-items: center;
+                    }
+                }
+            }
+    
+            .schedule {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0 2em 2em 2em;
+            }
+    
+            h3 {
+
+                font-size: 1.5em;
+                margin-bottom: 1em;
+            }
+        }
+    
+        #workAndBLog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            width: 100%;
+            background: linear-gradient(45deg, #1E40AF, #2461E9);
+    
+    
+            .workWithUs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 80vw;
+                margin-bottom: 2em;
+    
+                img {
+                    height: 50vh;
+                }
+    
+                h1 {
+                    color: white;
+                    font-size: 1.5em;
+                    margin-bottom: 0.5em;
+                    text-align: center;
+                }
+    
+                p {
+                    color: white;
+                    font-size: 1.2em;
+                    text-align: center;
+                    margin-top: 0;
+                }
+            }
+    
+            .seeTheBlog {
+                background-color: $offWhite;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 2em 2em 0 2em;
+                border-radius: 10px;
+                width: 90vw;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+                h1 {
+                    color: $azul-tractian;
+                    font-size: 1.5em;
+                    text-align: center; 
+                    margin-bottom: 0.5em;
+                }
+    
+                p {
+                    color: black;
+                    font-size: 1.1em;    
+                }
+            }
+        }
+    
+        #finalContent {
+    
+            .demoForm {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 80%;
+                margin-bottom: 2em;
+    
+                h1 {
+                    color: $azul-tractian;
+                    font-size: 1.5em;
+                    font-family: Noto Sans;
+                    text-align: center;
+                }
+    
+                p {
+                    color: $azul-tractian;
+                    font-size: 1em;
+                    text-align: center;
+                    font-family: Noto Sans;
+                }
+    
+                input {
+                    margin: 0.5em;
+                    padding: 1em;
+                    border-radius: 10px;
+                    border: none;
+                    font-family: Noto Sans;
+                    width: 80vw;
+                }
+    
+                .buttonsForm {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+    
+            .partnersLogos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    height: 13vh;
+                    margin: 0.5em;
+                }
+            }
+        }
+    }
+}
+
 
 
 @keyframes glowing {

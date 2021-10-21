@@ -25,24 +25,6 @@
 
     }
 
-    .menu-mobile {
-
-        display: none;
-    
-    }
-    
-    .sandwich {
-    
-       // display: none;
-
-        input {
-    
-            opacity: 0;
-        
-        }
-    
-    }
-
     .menu {
         ul {
             display: flex;
@@ -146,6 +128,36 @@
     }
 }
 
+.menu-mobile {
+    ul {
+        display: none;
+
+        li {
+            display: none;
+        }
+
+        #dropdown-custom-1 {
+            display: none;
+        }
+
+        .super-colors {
+            display: none;
+        }
+    }
+}
+
+.sandwich {
+
+    display: none;
+
+    input {
+
+        opacity: 0;
+    
+    }
+
+}
+
 .header.active {
     background: linear-gradient(45deg, #1E40AF, #2461E9);
 }
@@ -171,6 +183,10 @@
 
         input {
             opacity: 100;
+        }
+
+        #checkbox {
+            display: none;
         }
 
     }
@@ -238,9 +254,9 @@
     .menu-mobile {
 
         width: 100vw;
-        display: none;
         align-items: center;
         justify-content: center;
+        display: none;
 
         ul {
             display: flex;
@@ -255,7 +271,7 @@
             margin-bottom: 0em;
 
             li {
-
+                display: flex;
                 margin: 0.5rem;
                 a {
                     text-decoration: none;
@@ -269,20 +285,18 @@
             }
 
             #dropdown-custom-1 {
+                display: flex;
                 margin: 0.5rem;
             }
 
             .super-colors {
-                position: relative;
-                z-index: 2;
+                display: flex;
                 h2 {
                     font-size: 1em;
                     padding-left: 1em; 
                 }
 
                 .TESTE {
-                    position: relative;
-                    z-index: 2;
 
                     h1 {
                         font-size: 1.5em;

@@ -145,7 +145,7 @@ function Home() {
 
                         <img draggable="false" src={PlugAndPlay} alt=""/>
 
-                        <div>
+                        <div className="mobileAdjust">
                             <h2>Sensor Plug & Play</h2>
                             <h3>Sem gateway, sem enrolação</h3>
                             <p>
@@ -159,7 +159,7 @@ function Home() {
 
                         <img draggable="false" src={Monitoramento} alt=""/>
 
-                        <div>
+                        <div className="mobileAdjust">
                             <h2>Monitoramento Online</h2>
                             <h3>Plataforma que trabalha por você</h3>
                             <p>
@@ -173,7 +173,7 @@ function Home() {
 
                         <img draggable="false" src={Gestaodeativos} alt=""/>
 
-                        <div>
+                        <div className="mobileAdjust">
                             <h2>Gestão de Ativos</h2>
                             <h3>Ordens de serviço automatizadas</h3>
                             <p>
