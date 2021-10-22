@@ -25,7 +25,25 @@ $azul-tractian:  #1E3A8A;
 $violeta: #3c0e96;
 $verde-vivo: #22C55E;
 $offWhite: #ececec;
-$amarelo: #dbb826;
-$roxo: #55008F;
-$cinza: #585755;
 $branco: #fff;
+
+//brilho dos botões
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+//glitch dos títulos
+@keyframes glitch{
+    2%,64%{
+        transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+        transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+        transform: translate(0,0) skew(5deg); 
+    }
+}

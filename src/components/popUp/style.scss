@@ -55,7 +55,7 @@
                     text-align: center;
                     font-family: Noto Sans;
                     font-size: 1.1em;
-                    color: $roxo;
+                    color: $azul-tractian;
                     font-weight: 500;
                     z-index: 2;
                     margin-bottom: 2em;
@@ -64,9 +64,9 @@
 
                 #glowOnHover {
                     padding: 0.5em;
-                    border: white;
+                    border: $branco;
                     outline: none;
-                    color: #fff;
+                    color: $branco;
                     background: $verde-vivo;
                     cursor: pointer;
                     position: relative;

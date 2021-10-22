@@ -63,23 +63,29 @@ function Home() {
                     <img draggable="false" src={Robozinha} alt=""/>
 
                     <div className="cardsWrapper">
+
                         <div className="whyCards">
                             <h2>Manutenção Preditiva</h2>
                             <p>Detecção automática de falhas, saúde do ativo em tempo real, confiabilidade e insights automáticos.</p>
                         </div>
+
                         <div className="whyCards">
                             <h2>Automação de OS</h2>
                             <p>Automatize a geração de ordens de serviço com base em horas ou em dias e melhore a sua preventiva.</p>
                         </div>
+
                         <div className="whyCards">
                             <h2>Monitoramento Online</h2>
                             <p>Sensor Tractian coleta dados de vibração, temperatura, horímetro e consumo de energia em tempo real.</p>
                         </div>
+
                         <div className="whyCards">
                             <h2>Setup Instantâneo</h2>
                             <p>Solução Plug & Play, sem necessidade de gateways ou roteadores, comunicação via 2G/3G independente.</p>
                         </div>
+
                     </div>
+
                 </div>
 
                 <h2>Sua máquinas mais seguras, com a nossa ajuda.</h2>
@@ -101,45 +107,56 @@ function Home() {
                         <h3>30%</h3>
                         <p>REDUÇÃO DAS OCORRÊNCIAS DE ÚLTIMA HORA NA MANUTENÇÃO.</p>
                     </div>
+
                 </div>
 
                 <section id="achievements">
+
                     <img draggable="false" src={CincoEstrelas} alt=""/>
                     <h2>#1 Em soluções para Manutenção.</h2>
 
                     <div className="feedbacks">
                         <div className="clientText">
+
                             <img src={ProfilePic} alt=""/>
                             <h3>"O dispositivo traz mais confiabilidade ao processo, agilizando a análise de informações e evitando paradas na produção, o que impacta positivamente a produtividade."</h3>
                             <div>
                                 <h4>Eduarda Buaiz</h4>
                                 <p>Diretora Geral - Indústria Alimentícia</p>
                             </div>
+
                         </div>
                         <div className="clientText">
+
                             <img src={ProfilePic} alt=""/>
                             <h3>"Uma criança pode instalar o sensor da Tractian, e a plataforma é tão fácil de usar quanto uma rede social. Todo sistema é muito simples e confiável."</h3>
                             <div>
                                 <h4>Renê Santos</h4>
                                 <p>Técnico Mecânico - Indústria Cervejeira</p>
                             </div>
+
                         </div>
                         <div className="clientText">
+
                             <img src={ProfilePic} alt=""/>
                             <h3>"Antes da Tractian, a falha acontecia sem que nós tivéssemos nenhuma chance de reação. Agora nós conseguimos identificar qualquer anomalia fora do normal e isso nos permite fazer a intervenção antes que a quebra aconteça."</h3>
                             <div>
                                 <h4>Tiago Junqueira</h4>
                                 <p>Supervisor de Manutenção Geral - AmstedMaxion</p>
                             </div>
+
                         </div>
                         <div className="clientText">
+
                             <img src={ProfilePic} alt=""/>
                             <h3>"Com a Tractian otimizamos tempo, reduzimos custo com falhas antecipadas pela solução. A tecnologia deles é uma grande ferramenta no acompanhamento e gestão dos nossos ativos que são um dos patrimônios da empresa."</h3>
                             <div>
                                 <h4>Gustavo Ribeiro</h4>
                                 <p>Diretor Industrial - Indústria Gerenciamento de Resíduos</p>
                             </div>
+
                         </div>
+
                     </div>
 
                 </section>                
@@ -162,12 +179,14 @@ function Home() {
                         <img draggable="false" src={PlugAndPlay} alt=""/>
 
                         <div className="mobileAdjust">
+
                             <h2>Sensor Plug & Play</h2>
                             <h3>Sem gateway, sem enrolação</h3>
                             <p>
                                 Nossos sensores enviam dados do seu equipamento através de rede 2g/3g pensando na facilidade de implementação.
                                 Basta fixar o sensor no local a ser monitorado e pronto: acompanhe em tempo real a condição da sua máquina.
                             </p>
+
                         </div>
                     </div>
 
@@ -176,12 +195,14 @@ function Home() {
                         <img draggable="false" src={Monitoramento} alt=""/>
 
                         <div className="mobileAdjust">
+
                             <h2>Monitoramento Online</h2>
                             <h3>Plataforma que trabalha por você</h3>
                             <p>
                                 A plataforma oferece uma visão ampla da condição da sua máquina.
                                 Insights automáticos, detecção de folgas mecânica, desalinhamento, desacoplamento e modelos de IA exclusivos da Tractian para cada tipo de máquina.
                             </p>
+
                         </div>
                     </div>
                     
@@ -190,20 +211,23 @@ function Home() {
                         <img draggable="false" src={Gestaodeativos} alt=""/>
 
                         <div className="mobileAdjust">
+
                             <h2>Gestão de Ativos</h2>
                             <h3>Ordens de serviço automatizadas</h3>
                             <p>
                                 Pare de estimar dias de funcionamento para manutenção preventiva.
                                 Com o horímetro dos nossos sensores, nossa plataforma gera ordens de serviços automáticas com base em horas de funcionamento.
                             </p>
+
                         </div>
+
                     </div>                    
 
                 </div>
 
-                <section id="PSPhases">
+                <section id="sellPhases">
 
-                    <div className="PSStoryline">
+                    <div className="sellStoryline">
 
                         <div id="A" className="storylineText">
 
@@ -252,6 +276,7 @@ function Home() {
                 </section>
 
                 <div className="detectedProblems">
+
                     <h1>Detectamos seus problemas com precisão.</h1>
                     <div className="gridProblems">
 
@@ -259,22 +284,27 @@ function Home() {
                             <FontAwesomeIcon icon={faExclamationTriangle} className="exclamationTriangle" />
                             <h4>Desalinhamento</h4>
                         </div>
+
                         <div className="problem">
                             <FontAwesomeIcon icon={faExclamationCircle} className="exclamationCircle" />
                             <h4>Desbalanceamento</h4>
                         </div>
+
                         <div className="problem">
                             <FontAwesomeIcon icon={faMinusCircle} className="minusCircle" />
                             <h4>Folga Mecânica</h4>
                         </div>
+
                         <div className="problem">
                             <FontAwesomeIcon icon={faFireAlt} className="fireAlt" />
                             <h4>Temperatura Anormal</h4>
                         </div>
+
                         <div className="problem">
                             <FontAwesomeIcon icon={faBroadcastTower} className="broadcastTower" />
                             <h4>Vibração Anormal</h4>
                         </div>
+
                         <div className="problem">
                             <FontAwesomeIcon icon={faLevelDownAlt} className="levelDownAlt" />
                             <h4>Parada Inesperada</h4>
@@ -294,6 +324,7 @@ function Home() {
             </section>
 
             <section id="workAndBLog">
+
                 <div className="workWithUs">
                     <h1>ENTRE PARA A EQUIPE!</h1>
                     <img draggable="false" src={LeoeMih} alt=""/>
@@ -308,6 +339,7 @@ function Home() {
                     <p>Conheça as 10 causas mais comuns em motores elétricos e saiba como evitá-las</p>
                     <button className="blogButton" type="button">Ir para o Blog</button>
                 </div>
+                
             </section>
 
             <section id="finalContent">

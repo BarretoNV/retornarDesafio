@@ -58,9 +58,12 @@ function Footer() {
 
                 
                 <ul className="footerList">
+
                     <h1>FALE CONOSCO</h1>
+
                     <li> <Link to='/' > Trabalhe conosco </Link> </li>
-                    <li> <Link to='/'> Fale com o CEO </Link> </li>                
+                    <li> <Link to='/'> Fale com o CEO </Link> </li>  
+
                 </ul>
 
             </div>
@@ -87,11 +90,13 @@ function Footer() {
                         <img draggable="false" src={Premio1} alt=""/>
                         <img draggable="false" src={Premio2} alt=""/>
                     </div>
+
                 </ul>
 
                 <ul className='footerImages'>
 
                     <h1>CONECTE-SE CONOSCO</h1>
+                    
                     <div className="socialMedias">
                         <Link to='https://www.linkedin.com/company/tractian/'> <img draggable="false" src={Linkedin} alt=""/> </Link>
                         <Link to='https://www.facebook.com/tractian'> <img draggable="false" src={Facebook} alt=""/> </Link>

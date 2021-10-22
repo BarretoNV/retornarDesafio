@@ -24,24 +24,24 @@
                 font-size: 4em;
                 font-family: Fira Mono;
                 font-weight: normal;
-                color: white;
+                color: $branco;
                 animation: glitch 1s linear infinite;
             }
     
             h2 {
                 font-size: 1.5em;
                 font-family: Fira Mono;
-                color: white;
+                color: $branco;
             }
 
             h3 {
                 font-size: 1em;
                 font-family: Fira Mono;
-                color: white;
+                color: $branco;
                 margin-top: 1em;
 
                 a {
-                    color: white;
+                    color: $branco;
                     text-decoration: none;
                     font-weight: bold;
 
@@ -53,9 +53,9 @@
 
             #glowOnHover {
                 padding: 1em;
-                border: white;
+                border: $branco;
                 outline: none;
-                color: #fff;
+                color: $branco;
                 background: $verde-vivo;
                 cursor: pointer;
                 position: relative;
@@ -102,29 +102,7 @@
                 left: 0;
                 top: 0;
                 border-radius: 10px;
-            }
-            
-
-            
-            h1:before,
-            h1:after{
-                content: attr(title);
-                position: absolute;
-                left: 0;
-            }
-            
-            h1:before{
-                animation: glitchTop 1s linear infinite;
-                clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-                -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-            }
-            
-            h1:after{
-                animation: glitchBotom 1.5s linear infinite;
-                clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-                -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-            }
-            
+            }            
         }
 
     
@@ -140,7 +118,6 @@
         flex-direction: column;
         padding-bottom: 2em;
 
-
         h1 {
             font-size: 3em;
             font-family: Noto Sans;
@@ -148,29 +125,11 @@
             animation: glitch 1s linear infinite;
         }
 
-        h1:before,
-        h1:after{
-            content: attr(title);
-            position: absolute;
-            left: 0;
-        }
-        
-        h1:before{
-            animation: glitchTop 1s linear infinite;
-            clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-        }
-
-        h1:after{
-            animation: glitchBotom 1.5s linear infinite;
-            clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-            -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-        }
 
         h2 {
             font-size: 2em;
             font-family: Noto Sans;
-            color: white;
+            color: $branco;
         }
 
         #rowObjects {
@@ -220,9 +179,9 @@
 
         #glowOnHover {
             padding: 1em;
-            border: white;
+            border: $branco;
             outline: none;
-            color: #fff;
+            color: $branco;
             background: $verde-vivo;
             cursor: pointer;
             position: relative;
@@ -289,7 +248,7 @@
                 transition: transform .45s ease, background .45s ease;
             
                 h3 {
-                    color: white;
+                    color: $branco;
                     font-size: 3.5em;
                     font-family: Noto Sans;
                     line-height: 1;
@@ -301,7 +260,7 @@
             
                 p {
                     opacity: 0.5;
-                    color: #FFFFFF;
+                    color: $branco;
                     font-weight: 600;
                     line-height: 1.8;
                     margin: 0 0 1.25em;
@@ -314,11 +273,11 @@
                     transform: scale(1.02);
                 
                     h3 {
-                        color: white;
+                        color: $branco;
                     }
                 
                     h4 {
-                        color: white;
+                        color: $branco;
                     }
                 
                     p {
@@ -343,7 +302,7 @@
             }
     
             h2 {
-                color: white;
+                color: $branco;
             }
     
             .feedbacks {
@@ -353,38 +312,38 @@
                 justify-content: center;
                 align-items: center;
     
-                    .clientText {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
+                .clientText {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1em;
+                    padding: 1em;
+                    width: 80vw;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                    img {
+                        height: 20vh;
+                        border-radius: 100px;
                         margin: 1em;
-                        padding: 1em;
-                        width: 80vw;
-                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-                        img {
-                            height: 20vh;
-                            border-radius: 100px;
-                            margin: 1em;
-                        }
-                
-                        h3 {
-                            margin: 1em;
-                            text-align: center;
-                            font-size: 1em;
-                            color: white;
-                        }
-    
-                        h4, p {
-                            color: white;
-                            text-align: center;
-                        }
-    
-                        p{
-                            font-size: 0.8em;
-                        }
-    
                     }
+            
+                    h3 {
+                        margin: 1em;
+                        text-align: center;
+                        font-size: 1em;
+                        color: $branco;
+                    }
+
+                    h4, p {
+                        color: $branco;
+                        text-align: center;
+                    }
+
+                    p{
+                        font-size: 0.8em;
+                    }
+
+                }
             }
         }
     }
@@ -407,24 +366,6 @@
             animation: glitch 1s linear infinite;
         }
 
-        h1:before,
-        h1:after{
-            content: attr(title);
-            position: absolute;
-            left: 0;
-        }
-        
-        h1:before{
-            animation: glitchTop 1s linear infinite;
-            clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-        }
-        
-        h1:after{
-            animation: glitchBotom 1.5s linear infinite;
-            clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-            -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-        }
 
         h2 {
             font-size: 2.5em;
@@ -444,9 +385,9 @@
 
         #glowOnHover {
             padding: 1em;
-            border: white;
+            border: $branco;
             outline: none;
-            color: #fff;
+            color: $branco;
             background: $verde-vivo;
             cursor: pointer;
             position: relative;
@@ -527,14 +468,14 @@
             }
         }
 
-        #PSPhases {
+        #sellPhases {
 
             display: flex;
             flex-direction: column;
             width: 100vw;
             align-items: center;  
 
-            .PSStoryline {
+            .sellStoryline {
 
                 display: grid; 
                 grid-template-columns: 1fr 0fr 1fr; 
@@ -552,7 +493,7 @@
                 .boxStoryline {
                     h1 {
                         font-size: 3em;
-                        color: white;
+                        color: $branco;
                         text-align: center;
                         padding: 0.5em;
                         border-radius: 100px;
@@ -567,7 +508,7 @@
 
                     h3 {
 
-                        color: white;
+                        color: $branco;
 
                     }
 
@@ -579,17 +520,16 @@
 
                         margin: .5rem 0;
                         font-weight: 400;
-                        color: white;
+                        color: $branco;
                         opacity: .6;
 
                     }
 
                     span {
 
-                        color: white;
+                        color: $branco;
 
                     }
-
                 }
 
                 #A {
@@ -631,7 +571,6 @@
                     grid-area: F;
 
                 }
-
             }
         }
 
@@ -678,7 +617,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
 
                     .exclamationCircle {
@@ -687,7 +626,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
 
                     .minusCircle {
@@ -696,7 +635,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
 
                     .fireAlt {
@@ -705,7 +644,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
 
                     .broadcastTower {
@@ -714,7 +653,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
 
                     .levelDownAlt {
@@ -723,7 +662,7 @@
                         width: 2em;
                         padding: 0.5em;
                         border-radius: 100px;
-                        color: white;
+                        color: $branco;
                     }
                 }
             }
@@ -745,9 +684,9 @@
 
             #glowOnHover {
                 padding: 1em;
-                border: white;
+                border: $branco;
                 outline: none;
-                color: #fff;
+                color: $branco;
                 background: $verde-vivo;
                 cursor: pointer;
                 position: relative;
@@ -825,22 +764,22 @@
             }
 
             h1 {
-                color: white;
+                color: $branco;
                 font-size: 2em;
                 margin-bottom: 0.5em;
             }
 
             p {
-                color: white;
+                color: $branco;
                 font-size: 1.5em;
                 margin-top: 0;
             }
 
             #glowOnHover {
                 padding: 1em;
-                border: white;
+                border: $branco;
                 outline: none;
-                color: #fff;
+                color: $branco;
                 background: $verde-vivo;
                 cursor: pointer;
                 position: relative;
@@ -929,7 +868,7 @@
 
             .blogButton {
                 padding: 1em;
-                border: white;
+                border: $branco;
                 outline: none;
                 color: $azul-tractian;
                 background: transparent;
@@ -990,9 +929,9 @@
 
                 #glowOnHover {
                     padding: 1em;
-                    border: white;
+                    border: $branco;
                     outline: none;
-                    color: #fff;
+                    color: $branco;
                     background: $verde-vivo;
                     cursor: pointer;
                     position: relative;
@@ -1085,7 +1024,7 @@
                     font-size: 2em;
                     font-family: Fira Mono;
                     font-weight: normal;
-                    color: white;
+                    color: $branco;
                     text-align: center;
                     animation: glitch 1s linear infinite;
                 }
@@ -1093,7 +1032,7 @@
                 h2 {
                     font-size: 1.5em;
                     font-family: Fira Mono;
-                    color: white;
+                    color: $branco;
                     text-align: center;
                 }                
             }
@@ -1115,7 +1054,7 @@
             h1 {
                 font-size: 2em;
                 font-family: Noto Sans;
-                color: white;
+                color: $branco;
                 animation: glitch 1s linear infinite;
             }
     
@@ -1123,7 +1062,7 @@
                 font-size: 1.5em;
                 font-family: Noto Sans;
                 text-align: center;
-                color: white;
+                color: $branco;
             }
     
             #rowObjects {
@@ -1163,7 +1102,7 @@
                 }
         
                 h2 {
-                    color: white;
+                    color: $branco;
                     font-size: 1.2em;
                 }
         
@@ -1174,10 +1113,10 @@
                     justify-content: center;
                     align-items: center;
         
-                        .clientText {
-                            display: flex;
-                            flex-direction: column;        
-                        }
+                    .clientText {
+                        display: flex;
+                        flex-direction: column;        
+                    }
                 }
             }
         }
@@ -1233,11 +1172,11 @@
                     }
 
                    .mobileAdjust {
-                       p {
+                        p {
                         font-size: 1em;
                         text-align: center;
                         margin: 0 1em;
-                       }
+                        }
                    }
                 }
     
@@ -1300,7 +1239,7 @@
     
                             margin: .5rem 0;
                             font-weight: 400;
-                            color: white;
+                            color: $branco;
                             opacity: .6;
     
                         }
@@ -1310,7 +1249,6 @@
                             text-align: center;
     
                         }
-    
                     }    
                 }
             }
@@ -1384,14 +1322,14 @@
                 }
     
                 h1 {
-                    color: white;
+                    color: $branco;
                     font-size: 1.5em;
                     margin-bottom: 0.5em;
                     text-align: center;
                 }
     
                 p {
-                    color: white;
+                    color: $branco;
                     font-size: 1.2em;
                     text-align: center;
                     margin-top: 0;
@@ -1485,55 +1423,3 @@
 
 
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-
-@keyframes glitch{
-    2%,64%{
-        transform: translate(2px,0) skew(0deg);
-    }
-    4%,60%{
-        transform: translate(-2px,0) skew(0deg);
-    }
-    62%{
-        transform: translate(0,0) skew(5deg); 
-    }
-}
-
-@keyframes glitchTop{
-    2%,64%{
-        transform: translate(2px,-2px);
-    }
-    4%,60%{
-        transform: translate(-2px,2px);
-    }
-    62%{
-        transform: translate(13px,-1px) skew(-13deg); 
-    }
-}
-
-@keyframes glitchBotom{
-    2%,64%{
-        transform: translate(-2px,0);
-    }
-    4%,60%{
-        transform: translate(-2px,0);
-    }
-    62%{
-        transform: translate(-22px,5px) skew(21deg); 
-    }
-}
-
-@keyframes point {
-    0% {
-     transform: translateX(0);
-    }
-    100% {
-      transform: translateX(.125em);
-    }
-  }
