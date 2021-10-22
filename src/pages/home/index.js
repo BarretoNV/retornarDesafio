@@ -1,11 +1,13 @@
 import React from 'react';
 import './style.scss';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExclamationTriangle, faExclamationCircle,
 faMinusCircle, faBroadcastTower, faLevelDownAlt,
 faFireAlt } from '@fortawesome/free-solid-svg-icons'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import WhatsappButton from '../../components/whatsappButton';
 
 //imagens
 import Robozin from '../../img/robozinho.png';
@@ -19,7 +21,20 @@ import Receba from '../../img/receba.png';
 import CincoEstrelas from '../../img/cincoestrelas.png';
 import ProfilePic from '../../img/profilepic.jpg';
 import LeoeMih from '../../img/leoemih.png';
-import ReactLogo from '../../img/reactlogo.png';
+import LogoTigre from '../../img/logo-tigre-2.png';
+import LogoPirelli from '../../img/logo-pirelli-2.png';
+import LogoYara from '../../img/logo-yara-2.png';
+import LogoMarilan from '../../img/logo-marilan-2.png';
+import LogoAirLiquid from '../../img/logo-air-liquide-2.png';
+import LogoArcelor from '../../img/logo-arcelor-2.png';
+import LogoSuzano from '../../img/logo-suzano-2.png';
+import LogoIochpemaxiom from '../../img/logo-iochpemaxion.png';
+import LogoCiser from '../../img/logo-ciser.png';
+import LogoMaster from '../../img/logo-master.png';
+import LogoAlbras from '../../img/logo-albras-3.png';
+import LogoElectrolux from '../../img/logo-electrolux.png';
+import LogoFaberCastel from '../../img/logo-faber-castell-2.png';
+import LogoEmbraer from '../../img/logo-embraer.png';
 
 
 function Home() {
@@ -33,6 +48,7 @@ function Home() {
                     <h1> Completo e eficiente. </h1>
                     <h2> O nosso sistema preditivo que te dá produtividade e evita falhas, te dando segurança para trabalhar! </h2>
                     <button id="glowOnHover" type="button">SAIBA MAIS!</button>
+                    <h3>Já é cliente? <Link to="/">Acesse aqui.</Link></h3>
                 </div>
 
                 <img draggable="false" src={Robozin} alt=""/>
@@ -313,18 +329,25 @@ function Home() {
 
                 </form>
 
-                <h2>Conheça nossos parceiros!</h2>
+                <h2>Conheça nossos parceiros (Clientes?)</h2>
                 <div className="partnersLogos">
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
-                    <img draggable="false" src={ReactLogo} alt=""/>
+                    <img draggable="false" src={LogoYara} alt=""/>
+                    <img draggable="false" src={LogoPirelli} alt=""/>
+                    <img draggable="false" src={LogoTigre} alt=""/>
+                    <img draggable="false" src={LogoMarilan} alt=""/>
+                    <img draggable="false" src={LogoAirLiquid} alt=""/>
+                    <img draggable="false" src={LogoArcelor} alt=""/>
+                    <img draggable="false" src={LogoSuzano} alt=""/>
+                    <img draggable="false" src={LogoIochpemaxiom} alt=""/>
+                    <img draggable="false" src={LogoCiser} alt=""/>
+                    <img draggable="false" src={LogoMaster} alt=""/>
+                    <img draggable="false" src={LogoAlbras} alt=""/>
+                    <img draggable="false" src={LogoElectrolux} alt=""/>
+                    <img draggable="false" src={LogoFaberCastel} alt=""/>
+                    <img draggable="false" src={LogoEmbraer} alt=""/>
                 </div>
             </section>
+            <WhatsappButton />
             <Footer />
         </section>
     )

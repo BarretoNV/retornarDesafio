@@ -84,10 +84,12 @@ footer {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img {
-                    height: 5vh;
+                a {
                     margin: 0 2em 1.5em 0;
                     
+                    img {
+                        height: 5vh;
+                    }
                 }
             }
 

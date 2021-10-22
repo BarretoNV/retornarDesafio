@@ -12,7 +12,6 @@ import Linkedin from '../../img/linkedin.png';
 import Facebook from '../../img/facebook.png';
 import Instagram from '../../img/instagram.png';
 import Youtube from '../../img/youtube.png';
-import ScrollToTop from '../../components/toTop';
 
 
 
@@ -64,8 +63,6 @@ function Footer() {
                     <li> <Link to='/'> Fale com o CEO </Link> </li>                
                 </ul>
 
-                <ScrollToTop/>
-
             </div>
 
             <div className='menuImages' >
@@ -96,10 +93,10 @@ function Footer() {
 
                     <h1>CONECTE-SE CONOSCO</h1>
                     <div className="socialMedias">
-                        <img draggable="false" src={Linkedin} alt=""/>
-                        <img draggable="false" src={Instagram} alt=""/>
-                        <img draggable="false" src={Facebook} alt=""/>
-                        <img draggable="false" src={Youtube} alt=""/>
+                        <Link to='https://www.linkedin.com/company/tractian/'> <img draggable="false" src={Linkedin} alt=""/> </Link>
+                        <Link to='https://www.facebook.com/tractian'> <img draggable="false" src={Facebook} alt=""/> </Link>
+                        <Link to='https://www.instagram.com/tractian/'> <img draggable="false" src={Instagram} alt=""/> </Link>
+                        <Link to='https://www.youtube.com/c/TRACTIAN'> <img draggable="false" src={Youtube} alt=""/> </Link>
                     </div>
 
                     <h2>© Tractian Tecnologia Ltda</h2>

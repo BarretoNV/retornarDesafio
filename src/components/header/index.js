@@ -4,6 +4,8 @@ import './style.scss';
 import logo from '../../img/Logo-Tractian.png';
 import {Dropdown, ButtonGroup, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faBroadcastTower } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
 
@@ -32,10 +34,17 @@ function Header() {
 
     window.addEventListener('scroll', changeBackgroundColor);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      };
+
     return (
         <div>
             <header className={header ? 'header active' : 'header'}>
-                <div className='logo' >
+                <div onClick={scrollToTop} className='logo' >
 
                     <Link to="/"> <img src={logo} alt="Logo" /> </Link>
 
