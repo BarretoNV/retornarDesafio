@@ -223,19 +223,19 @@ function Header() {
                                 <Dropdown.Item href="#/action-1">
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Sensor Tractian</h1>
-                                        <p>Análise de Vibração e Temperatura em tempo real.</p>
+                                        <p>Análise de Vibração e <br></br>Temperatura em tempo real.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Plataforma</h1>
-                                        <p>Monitore a condição das suas máquinas de qualquer lugar.</p>
+                                        <p>Monitore a condição das suas <br></br>máquinas de qualquer lugar.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Funcionalidades</h1>
-                                        <p>Saúde do Ativo, Ordens de Serviço, Insights Automáticos e muito mais.</p>
+                                        <p>Saúde do Ativo, Ordens de <br></br>Serviço, Insights Automáticos e <br></br>muito mais.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
@@ -263,31 +263,31 @@ function Header() {
                             <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Conheça a Tractian</h1>
-                                        <p>Conheça mais sobre a equipe que faz acontecer o produto, nossa história e vagas abertas.</p>
+                                        <p>Conheça mais sobre a equipe <br></br>que faz acontecer o produto,<br></br> nossa história e vagas abertas.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Histórias de Sucesso</h1>
-                                        <p>Saiba como nossa solução melhora o dia a dia dos profissionais da manutenção.</p>
+                                        <p>Saiba como nossa solução <br></br>melhora o dia a dia dos <br></br>profissionais da manutenção.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Contato</h1>
-                                        <p>Entre em contato para tirar dúvidas, conhecer de perto nossa solução e enviar sugestões.</p>
+                                        <p>Entre em contato para tirar <br></br>dúvidas, conhecer de perto nossa <br></br>solução e enviar sugestões.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Trabalhe Conosco</h1>
-                                        <p>Venha participar da Startup para Indústria mais promissora do Brasil.</p>
+                                        <p>Venha participar da Startup para <br></br>Indústria mais promissora do <br></br>Brasil.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Imprensa</h1>
-                                        <p>Veja o que os principais veículos de informação falam sobre a Tractian.</p>
+                                        <p>Veja o que os principais veículos <br></br>de informação falam sobre a <br></br>Tractian.</p>
                                     </div>
                                 </Dropdown.Item>
                             </Dropdown.Menu>
@@ -303,31 +303,31 @@ function Header() {
                             <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Guias</h1>
-                                        <p>Obtenha os melhores guias para manutenção gratuitamente.</p>
+                                        <p>Obtenha os melhores guias para <br></br>manutenção gratuitamente.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Checklists</h1>
-                                        <p>Baixe nossos checklists gratuitos e evite problemas no seu time de manutenção.</p>
+                                        <p>Baixe nossos checklists gratuitos e <br></br>evite problemas no seu time de <br></br>manutenção.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
                                         <h1>Calculadora ROI</h1>
-                                        <p>Qual o peso da sua máquina no seu bolso? Veja se vale a pena trocar para a solução da Tractian.</p>
+                                        <p>Qual o peso da sua máquina no <br></br>seu bolso? Veja se vale a pena <br></br>trocar para a solução da Tractian.</p>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Divider />
                                 <h2>ÚLTIMOS MATERIAIS</h2>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
-                                        <h1>Em busca do downtime zero.</h1>
+                                        <h4>Em busca do downtime zero.</h4>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
                                     <div className="dropDownInfo" href="#/action-1">
-                                        <h1>Guia Completo Indicadores da Manutenção.</h1>
+                                        <h4>Guia Completo Indicadores da Manutenção.</h4>
                                     </div>
                                 </Dropdown.Item>
                                 <Dropdown.Item>

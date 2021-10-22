@@ -8,6 +8,7 @@ faFireAlt } from '@fortawesome/free-solid-svg-icons'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import WhatsappButton from '../../components/whatsappButton';
+import Popup from "../../components/popUp"
 
 //imagens
 import Robozin from '../../img/robozinho.png';
@@ -347,6 +348,8 @@ function Home() {
                     <img draggable="false" src={LogoEmbraer} alt=""/>
                 </div>
             </section>
+
+            <Popup />
             <WhatsappButton />
             <Footer />
         </section>
