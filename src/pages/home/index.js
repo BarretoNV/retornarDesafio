@@ -71,7 +71,8 @@ function Home() {
     function changeDisplay() {
 
         if (selectedFlavor !== '' && selectedSize !== '') {
-
+            
+            setIsChecked(!isChecked);
             if (isChecked){
                 icing.current.style.display = 'none'
                 flavorAndSize.current.style.display = 'flex'
@@ -87,13 +88,16 @@ function Home() {
     //função que muda da personalização para a tela de preço
     function goToCart() {
 
-        if (isChecked2){
-            cartDisplay.current.style.display = 'none'
-            icing.current.style.display = 'flex'
-        }else {
-            cartDisplay.current.style.display = 'flex'
-            icing.current.style.display = 'none'            
-        }
+        if (selectedIcing !== '') {
+            setIsChecked2(!isChecked2);
+            if (isChecked2){
+                cartDisplay.current.style.display = 'none'
+                icing.current.style.display = 'flex'
+            }else {
+                cartDisplay.current.style.display = 'flex'
+                icing.current.style.display = 'none'            
+            }
+        } else window.alert("Você precisa escolher todas as opções!")
     }
 
     return (
@@ -120,7 +124,7 @@ function Home() {
                     <option disabled selected value=''>Tamanho</option>
 
                     {sizes.map((item, index) => (
-                        <option value={index} key={index}>{item.title}</option>
+                        <option value={index} key={index}>{item.title} - {item.size} ml</option>
                     ))}
 
                 </select>
@@ -131,7 +135,6 @@ function Home() {
                     type="checkbox" 
                     onClick={() => {
 
-                        setIsChecked(!isChecked);
                         changeDisplay()
 
                     }}> Avançar 
@@ -145,6 +148,7 @@ function Home() {
                 {/* Selecionar a personalização */}
                 <select onChange={(event) => handleSelectedIcing(event)} name="icing">
 
+                    <option disabled selected value=''>Personalização</option>
                     {icings.map((item, index) => (
                         <option value={index} key={index}>{item.title}</option>
                     ))}
@@ -157,7 +161,6 @@ function Home() {
                     type="checkbox"  
                     onClick={() => {
 
-                    setIsChecked(!isChecked);
                     changeDisplay()
 
                 }}> Retornar </button>
@@ -168,7 +171,6 @@ function Home() {
                     type="checkbox"
                     onClick={() => {
 
-                        setIsChecked2(!isChecked2);
                         goToCart()
 
                 }}> Ver pedido </button>
@@ -182,7 +184,7 @@ function Home() {
                 {/* cada article mostra uma info */}
                 <article className="infoPedido">
                     <h2>Tamanho:</h2>
-                    <span>{selectedSize.title} R$ {selectedSize.value},00</span>
+                    <span>{selectedSize.title} - {selectedSize.size}ml | R$ {selectedSize.value},00</span>
                 </article>
 
                 <article className="infoPedido">
@@ -231,7 +233,6 @@ function Home() {
                     type="checkbox"
                     onClick={() => {
 
-                        setIsChecked2(!isChecked2);
                         goToCart();
 
                 }}>Modificar pedido</button>
