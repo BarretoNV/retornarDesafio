@@ -3,9 +3,13 @@ import './style.scss';
 
 function Home() {
 
-    const [selectedFlavor, setSelectedFlavor] = useState('')
-    const [selectedSize, setSelectedSize] = useState('')
-    const [selectedIcing, setSelectedIcing] = useState('')
+    const [selectedFlavor, setSelectedFlavor] = useState('');
+    const [selectedSize, setSelectedSize] = useState('');
+    const [selectedIcing, setSelectedIcing] = useState('');
+    const icingPrice = 3;
+    const flavorPrice = 0;
+    const flavors = [{title: "Banana"}, {title: "Morango"}, {title: "Kiwi"},];
+    const icings = [{title: "Nenhum"}, {title: "Granola"}, {title: "Paçoca"}, {title: "Leite Ninho"},];
 
     const sizes = [
         
@@ -40,7 +44,7 @@ function Home() {
 
     function handleSelectedFlavor(event) {
 
-        setSelectedFlavor(event.target.value)
+        setSelectedFlavor(flavors[event.target.value])
         console.log(selectedFlavor)
 
     }
@@ -54,30 +58,29 @@ function Home() {
     
     function handleSelectedIcing(event) {
 
-        setSelectedIcing(event.target.value)
+        setSelectedIcing(icings[event.target.value])
         console.log(selectedIcing)
 
     }
 
     const [isChecked, setIsChecked] = useState(false);
+    const [isChecked2, setIsChecked2] = useState(false);
 
-    const personalization = createRef()
     const flavorAndSize = createRef()
+    const icing = createRef()
     const cartDisplay = createRef()
 
-    function changedisplay() {
+    function changeDisplay() {
 
         if (selectedFlavor !== '' && selectedSize !== '') {
 
-            if (isChecked)
-                personalization.current.style.display = 'none'
-            else
-                personalization.current.style.display = 'flex'
-
-            if (isChecked)
+            if (isChecked){
+                icing.current.style.display = 'none'
                 flavorAndSize.current.style.display = 'flex'
-            else
+            }else{
+                icing.current.style.display = 'flex'
                 flavorAndSize.current.style.display = 'none'
+            }
 
         } else window.alert("Você precisa escolher todas as opções!")
 
@@ -85,16 +88,13 @@ function Home() {
 
     function goToCart() {
 
-        if (isChecked)
+        if (isChecked2){
             cartDisplay.current.style.display = 'none'
-        else
+            icing.current.style.display = 'flex'
+        }else {
             cartDisplay.current.style.display = 'flex'
-
-        if (isChecked)
-            personalization.current.style.display = 'flex'
-        else
-            personalization.current.style.display = 'none'
-
+            icing.current.style.display = 'none'            
+        }
     }
 
     return (
@@ -103,14 +103,14 @@ function Home() {
 
            <div className="flavor-and-size" ref={flavorAndSize}>
 
-               <h1>Escolha seu açaí 😋😋😋</h1>
+                <h1>Escolha seu açaí 😋😋😋</h1>
 
                 <select onChange={(event) => handleSelectedFlavor(event)} name="flavor">
 
                     <option disabled selected value=''>Sabor</option>
-                    <option value="Banana">Banana</option>
-                    <option value="Morango">Morango</option>
-                    <option value="Kiwi">Kiwi</option>
+                    {flavors.map((item, index) => (
+                        <option value={index} key={index}>{item.title}</option>
+                    ))}
 
                 </select>
 
@@ -127,48 +127,44 @@ function Home() {
                 <button 
                     className="button" 
                     type="checkbox" 
-                    id="checkbox"
                     onClick={() => {
 
                         setIsChecked(!isChecked);
-                        changedisplay()
+                        changeDisplay()
 
                     }}> Avançar 
                 </button>
 
            </div>
 
-           <div className="personalization" ref={personalization}>
+           <div className="icing" ref={icing}>
 
                <h1>Personalize seu açaí 😋😋😋</h1>
 
                 <select onChange={(event) => handleSelectedIcing(event)} name="icing">
 
-                    <option value=''>Cobertura</option>
-                    <option value="Granola">Granola</option>
-                    <option value="Paçoca">Paçoca</option>
-                    <option value="Leite Ninho">Leite Ninho</option>
+                    {icings.map((item, index) => (
+                        <option value={index} key={index}>{item.title}</option>
+                    ))}
 
                 </select>
 
                 <button
-                    className="button_return"
-                    type="checkbox" 
-                    id="checkbox" 
+                    className="button"
+                    type="checkbox"  
                     onClick={() => {
 
                     setIsChecked(!isChecked);
-                    changedisplay()
+                    changeDisplay()
 
                 }}> Retornar </button>
 
                 <button
                     className="button"
                     type="checkbox"
-                    id="checkbox"
                     onClick={() => {
 
-                        setIsChecked(!isChecked);
+                        setIsChecked2(!isChecked2);
                         goToCart()
 
                 }}> Ver pedido </button>
@@ -178,29 +174,29 @@ function Home() {
            <div className="cart" ref={cartDisplay}>
                 <h1> Resumo do seu pedido 😋😋😋</h1>
                 <article className="infoPedido">
-                    <h2>Tamanho</h2>
-                    <span>{selectedSize.title} R$ {selectedSize.value}.00</span>
+                    <h2>Tamanho:</h2>
+                    <span>{selectedSize.title} R$ {selectedSize.value},00</span>
                 </article>
                 <article className="infoPedido">
-                    <h2>Sabor</h2>
-                    <span>{selectedFlavor}</span>
+                    <h2>Sabor:</h2>
+                    <span>{selectedFlavor.title} R$ {flavorPrice},00</span>
                 </article>
                 <article className="infoPedido">
 
-                    {selectedIcing ? 
+                    {selectedIcing.title !== 'Nenhum' ?
                     
                     <>
 
-                        <h2>Personalizações</h2>
-                        <span>{selectedIcing} R$ 3,00</span>
+                        <h2>Personalizações:</h2>
+                        <span>{selectedIcing.title} R$ {icingPrice},00</span>
                         
                     </>
 
                     :
 
                     <>
-                        <h2>Personalizações</h2>
-                        <span>Sem cobertura R$ 0,00</span>
+                        <h2>Personalizações:</h2>
+                        <span>Sem cobertura R$ {flavorPrice},00</span>
 
                     </>
                 
@@ -208,28 +204,27 @@ function Home() {
 
                 </article>
                 
-                {selectedIcing ? 
+                {selectedIcing.title !== 'Nenhum' ? 
                 
-                    <h2>Valor total: R$ {Number(selectedSize.value + 3)}</h2>
+                    <h2>Valor total: R$ {Number(selectedSize.value + icingPrice)}</h2>
                 
                 : 
                 
                     <h2>Valor total: R$ {Number(selectedSize.value)}</h2>}
                 
-                <h2>Tempo de preparo: {selectedSize.time} minutos</h2>
+                <h2>Tempo de preparo: {selectedSize.time} min</h2>
                 
                 <button
-                    className="button_modify"
+                    className="button"
                     type="checkbox"
-                    id="checkbox"
                     onClick={() => {
 
-                        setIsChecked(!isChecked);
+                        setIsChecked2(!isChecked2);
                         goToCart();
 
                 }}>Modificar pedido</button>
 
-                <button className="button_end"> Finalizar pedido </button>
+                <button className="button"> Finalizar pedido </button>
 
            </div>
 
