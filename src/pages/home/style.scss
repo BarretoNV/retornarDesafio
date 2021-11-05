@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background: linear-gradient(45deg, $azul 0%, $rosa 46%, $amarelo 100%);
     
     h1 {
         color: $offWhite;
@@ -39,15 +39,15 @@
         text-transform: uppercase;
         cursor: pointer;
         color: $offWhite;
-        background: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        background: linear-gradient(45deg, $azul 0%, $rosa 46%, $amarelo 100%);
         box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.3);
 
         &:hover {
-            background: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            background: linear-gradient(90deg, $azul 0%, $rosa 46%, $amarelo 100%);
         }
 
         &:active {
-            background: linear-gradient(-45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            background: linear-gradient(-45deg, $azul 0%, $rosa 46%, $amarelo 100%);
         }
     }
 

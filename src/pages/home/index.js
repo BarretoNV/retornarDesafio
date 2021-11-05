@@ -3,45 +3,40 @@ import './style.scss';
 
 function Home() {
 
+    // Variáveis para pegar os valores selecionados
     const [selectedFlavor, setSelectedFlavor] = useState('');
     const [selectedSize, setSelectedSize] = useState('');
     const [selectedIcing, setSelectedIcing] = useState('');
-    const icingPrice = 3;
-    const flavorPrice = 0;
+
+    // constantes que podem ser modificadas para a precificação
+    const icingPrice = 3; //preço da personalização
+    const flavorPrice = 0; //preço dos sabores
+
+    // dados de sabores, personalizações e tamanho
     const flavors = [{title: "Banana"}, {title: "Morango"}, {title: "Kiwi"},];
     const icings = [{title: "Nenhum"}, {title: "Granola"}, {title: "Paçoca"}, {title: "Leite Ninho"},];
-
     const sizes = [
-        
          {
-
             title: "Pequeno",
             size: "300",
             value: 10,
-            time: 5,
-            
+            time: 5,  
         },
-
          {
-
             title: "Médio",
             size: "500",
             value: 12,
             time: 7,
-
         },
-
          {
-
             title: "Grande",
             size: "700",
             value: 15,
             time: 9,
-
         },
-
     ]
 
+    // funções para pegar os valores selecionados
     function handleSelectedFlavor(event) {
 
         setSelectedFlavor(flavors[event.target.value])
@@ -63,13 +58,16 @@ function Home() {
 
     }
 
+    //variáveis que são usadas para a mudança de tela
     const [isChecked, setIsChecked] = useState(false);
     const [isChecked2, setIsChecked2] = useState(false);
 
+    //variáveis que se referenciam a cada tela (div) 
     const flavorAndSize = createRef()
     const icing = createRef()
     const cartDisplay = createRef()
 
+    //função que muda da tela dos sabores e tamanho para personalização
     function changeDisplay() {
 
         if (selectedFlavor !== '' && selectedSize !== '') {
@@ -86,6 +84,7 @@ function Home() {
 
     }
 
+    //função que muda da personalização para a tela de preço
     function goToCart() {
 
         if (isChecked2){
@@ -105,6 +104,7 @@ function Home() {
 
                 <h1>Escolha seu açaí 😋😋😋</h1>
 
+                {/* Selecionar o sabor */}
                 <select onChange={(event) => handleSelectedFlavor(event)} name="flavor">
 
                     <option disabled selected value=''>Sabor</option>
@@ -114,6 +114,7 @@ function Home() {
 
                 </select>
 
+                {/* Selecionar o tamanho */}
                 <select onChange={(event) => handleSelectedSize(event)} name="size">
 
                     <option disabled selected value=''>Tamanho</option>
@@ -124,6 +125,7 @@ function Home() {
 
                 </select>
 
+                {/* Avançar para a próxima página */}
                 <button 
                     className="button" 
                     type="checkbox" 
@@ -139,8 +141,8 @@ function Home() {
 
            <div className="icing" ref={icing}>
 
-               <h1>Personalize seu açaí 😋😋😋</h1>
-
+                <h1>Personalize seu açaí 😋😋😋</h1>
+                {/* Selecionar a personalização */}
                 <select onChange={(event) => handleSelectedIcing(event)} name="icing">
 
                     {icings.map((item, index) => (
@@ -149,6 +151,7 @@ function Home() {
 
                 </select>
 
+                {/* Voltar para a página anterior */}
                 <button
                     className="button"
                     type="checkbox"  
@@ -159,6 +162,7 @@ function Home() {
 
                 }}> Retornar </button>
 
+                {/* Avançar para a próxima página */}
                 <button
                     className="button"
                     type="checkbox"
@@ -172,15 +176,20 @@ function Home() {
            </div>
 
            <div className="cart" ref={cartDisplay}>
+
                 <h1> Resumo do seu pedido 😋😋😋</h1>
+
+                {/* cada article mostra uma info */}
                 <article className="infoPedido">
                     <h2>Tamanho:</h2>
                     <span>{selectedSize.title} R$ {selectedSize.value},00</span>
                 </article>
+
                 <article className="infoPedido">
                     <h2>Sabor:</h2>
                     <span>{selectedFlavor.title} R$ {flavorPrice},00</span>
                 </article>
+                {/* Mostra a personalização (se a seleção não for "Nenhum", mostra a cobertura e o preço, se não, mostra 0) */}
                 <article className="infoPedido">
 
                     {selectedIcing.title !== 'Nenhum' ?
@@ -203,17 +212,20 @@ function Home() {
                     }
 
                 </article>
-                
-                {selectedIcing.title !== 'Nenhum' ? 
+                {/* Mesma lógica anterior, mas caso a cobertura seja diferente de "Nenhum", soma o preço dela, se não, mostra o preço normal */}
+                { selectedIcing.title !== 'Nenhum' ? 
                 
                     <h2>Valor total: R$ {Number(selectedSize.value + icingPrice)}</h2>
                 
                 : 
                 
-                    <h2>Valor total: R$ {Number(selectedSize.value)}</h2>}
-                
+                    <h2>Valor total: R$ {Number(selectedSize.value)}</h2>
+        
+                }
+                {/* Mostra o tempo de preparo que está ligado ao tamanho selecionado */}
                 <h2>Tempo de preparo: {selectedSize.time} min</h2>
-                
+
+                {/* Volta para a página anterior */}
                 <button
                     className="button"
                     type="checkbox"
@@ -224,6 +236,7 @@ function Home() {
 
                 }}>Modificar pedido</button>
 
+                {/* Finalizaria o pedido */}
                 <button className="button"> Finalizar pedido </button>
 
            </div>
