@@ -10,7 +10,9 @@ Esse projeto foi criado com [Create React App](https://github.com/facebook/creat
 
 ## Como rodar o projeto
 
-No terminal, entre na pasta do projeto e use:
+### Tendo o [node](https://nodejs.org/en/download/) instalado, rode `npm i` ou `yarn install` na pasta do arquivo.
+
+No terminal, ainda na pasta do projeto, use:
 
 ### `yarn start` ou `npm start`
 
