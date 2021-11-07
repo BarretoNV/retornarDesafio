@@ -189,7 +189,7 @@ function Home() {
 
                 <article className="infoPedido">
                     <h2>Sabor:</h2>
-                    <span>{selectedFlavor.title} R$ {flavorPrice},00</span>
+                    <span>{selectedFlavor.title} | R$ {flavorPrice},00</span>
                 </article>
                 {/* Mostra a personalização (se a seleção não for "Nenhum", mostra a cobertura e o preço, se não, mostra 0) */}
                 <article className="infoPedido">
@@ -199,7 +199,7 @@ function Home() {
                     <>
 
                         <h2>Personalizações:</h2>
-                        <span>{selectedIcing.title} R$ {icingPrice},00</span>
+                        <span>{selectedIcing.title} | R$ {icingPrice},00</span>
                         
                     </>
 
@@ -207,7 +207,7 @@ function Home() {
 
                     <>
                         <h2>Personalizações:</h2>
-                        <span>Sem cobertura R$ {flavorPrice},00</span>
+                        <span>Sem cobertura | R$ {flavorPrice},00</span>
 
                     </>
                 
@@ -221,7 +221,7 @@ function Home() {
                 
                 : 
                 
-                    <h2>Valor total: R$ {Number(selectedSize.value)}</h2>
+                    <h2>Valor total: R$ {Number(selectedSize.value)},00</h2>
         
                 }
                 {/* Mostra o tempo de preparo que está ligado ao tamanho selecionado */}
