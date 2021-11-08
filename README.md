@@ -7,6 +7,7 @@ preço e o tempo de preparo após a escolha dos itens adicionais."
 # Desafio front-end de sistema de pedidos
 
 Esse projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
+OBS: Os arquivos e estrutura desse projeto foram reaproveitados de outro projeto antigo devido ao curto prazo e por praticidade, por este motivo os commits de 25 de outubro e anteriores podem ser desconsiderados.
 
 ## Como rodar o projeto
 
